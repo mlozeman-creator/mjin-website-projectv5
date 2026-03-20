@@ -1,7 +1,11 @@
 {
   "author": {
-    "name": "Mark Lozeman",
-    "bio": "Software Developer in opleiding. Gefocust op moderne werkmethodes, PHP en cloud-technologie."
+    "name": "Jouw Naam",
+    "bio": "MBO-4 Software Developer in opleiding. Een gedreven 'Vibe Coder' met passie voor PHP, Bootstrap 5 en geautomatiseerde cloud-workflows via Vercel.",
+    "avatar_name": "Jouw+Naam", 
+    "github_url": "https://github.com/mlozeman-creator/mijn-website-project",
+    "linkedin_url": "#",
+    "email": "jouw@email.nl"
   },
   "articles": [
     {
@@ -9,35 +13,40 @@
       "slug": "context-publiceren",
       "title": "De weg naar het internet",
       "category": "Theorie",
-      "content": "Het publiceren van een website is meer dan een bestand uploaden. Het draait om de 'Gouden Driehoek':\n\n1. **Domeinnaam (DNS):** Je digitale adres.\n2. **Hosting (Serverless):** De ruimte op de server (Vercel).\n3. **SSL-Beveiliging:** Veiligheid via HTTPS."
+      "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&auto=format&fit=crop",
+      "content": "Het publiceren van een website is meer dan een bestand uploaden naar een server. Het draait om de 'Gouden Driehoek' die je site bereikbaar maakt:\n\n1. **Domeinnaam (DNS):** Dit is het menselijke adres (bijv. .nl). DNS is de wegwijzer die namen vertaalt naar technische IP-adressen.\n2. **Hosting (Serverless):** In plaats van een vaste computer te huren, gebruiken we Vercel. De servers staan in de 'cloud' en schalen automatisch mee met het aantal bezoekers.\n3. **SSL-Beveiliging:** Zorgt voor de HTTPS-verbinding. Dit is cruciaal voor de veiligheid en privacy van gebruikers, en wordt ook door zoekmachines gewaardeerd."
     },
     {
       "id": 2,
       "slug": "ontwikkeling-proces",
       "title": "Van Aanvraag naar Code",
       "category": "Proces",
-      "content": "Het proces volgt de SDLC (Software Development Life Cycle):\n* **Analyse:** Wat is het doel?\n* **Ontwerp:** UI/UX designs maken.\n* **Realisatie:** Bouwen met PHP en Bootstrap.\n* **Livegang:** Automatische publicatie via GitHub."
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&auto=format&fit=crop",
+      "content": "Het ontwikkelproces volgt de SDLC (Software Development Life Cycle):\n\n* **Analyse & Inventarisatie:** Wat is het doel van de site?\n* **Ontwerp (UI/UX):** Het maken van wireframes en visuele ontwerpen (bijv. in Figma).\n* **Realisatie:** Het daadwerkelijke bouwen met PHP en Bootstrap 5.\n* **Testen:** Werkt de site op mobiel en in verschillende browsers?\n* **Livegang (Deployment):** De publicatie via een geautomatiseerde CI/CD-pijplijn via GitHub."
     },
     {
       "id": 3,
       "slug": "mogelijkheden-keuzes",
       "title": "CMS of Eigen Code?",
       "category": "Techniek",
-      "content": "Er zijn drie smaken:\n1. **CMS:** WordPress (Makkelijk maar zwaar).\n2. **Builders:** Wix (Snel maar beperkt).\n3. **Eigen Code:** PHP (Maximale controle en snelheid)."
+      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop",
+      "content": "Er zijn drie hoofdsmaken voor website-ontwikkeling:\n\n1. **CMS (Content Management System):** Zoals WordPress. Makkelijk voor de eindgebruiker, maar vaak zwaar, traag en onderhoudsgevoelig.\n2. **Website Builders:** Zoals Wix of Squarespace. Snel klaar, maar je hebt technisch weinig controle.\n3. **Eigen Code:** PHP of React. Maximale controle, uniek design en optimale snelheid. Dit is de professionele keuze."
     },
     {
       "id": 4,
       "slug": "troubleshooting-log",
       "title": "Logboek: Problemen Oplossen",
       "category": "Praktijk",
-      "content": "Tijdens de bouw overwonnen:\n* **Configuratie-fout:** vercel.json hersteld.\n* **Versie-fout:** De PHP-runtime geforceerd naar 0.7.2.\n* **Node.js update:** De omgeving gemoderniseerd voor Vercel."
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop",
+      "content": "Tijdens de bouw van deze site overwonnen:\n\n* **Configuratie-fout:** De `vercel.json` configuratie bevatte inhoud in plaats van instructies. Hersteld door een strikte scheiding tussen data en architectuur.\n* **Runtime Versie Error:** De PHP-builder versie was onbereikbaar. Opgelost door versie `0.7.2` te forceren.\n* **Node.js Deprecation:** De host accepteerde geen oude Node-versies meer. De omgeving is gemoderniseerd voor een geslaagde build."
     },
     {
       "id": 5,
       "slug": "vibe-coding",
       "title": "Vibe Coding: De Nieuwe Revolutie",
       "category": "Trend",
-      "content": "Vibe Coding is programmeren op basis van concept en 'vibe', waarbij AI de zware syntax overneemt. \n\n**Toepassing op deze blog:**\nDit project is een puur voorbeeld van Vibe Coding. Wij bepaalden de richting en de architectuur, terwijl de AI hielp bij het razendsnel oplossen van complexe server-errors. Het resultaat is een professionele site zonder urenlang handmatig typewerk."
+      "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop",
+      "content": "Wat is Vibe Coding? Het is een nieuwe manier van programmeren waarbij de developer zich focust op de 'vibe' (concept en flow), terwijl AI de syntax en boilerplate code afhandelt.\n\n**Toepassing op deze blog:**\nDit project is een puur voorbeeld van Vibe Coding. In plaats van te debuggen op syntax, communiceerden we over de gewenste output. De AI fungeerde als de 'junior developer', terwijl jij als 'lead developer' de architectuur en de richting bewaakte. Een snelle realisatie van een complex CI/CD-systeem."
     }
   ]
 }
