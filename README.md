@@ -4,7 +4,7 @@
 Dit project is een dynamisch educatief platform dat laat zien hoe moderne webontwikkeling werkt. De focus ligt op de synergie tussen **PHP**, **Cloud-hosting (Vercel)** en de opkomende trend van **Vibe Coding**.
 
 ## 🔗 Live Website
-Bekijk het resultaat hier: **https://mjin-website-projectv5.vercel.app/**
+Bekijk het resultaat hier: **https://mijn-website-projectv5.vercel.app/**
 
 ---
 
