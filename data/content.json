@@ -1,0 +1,36 @@
+{
+  "author": {
+    "name": "Mark Lozeman",
+    "bio": "Software Developer. Gefocust op schone PHP-code, DevOps met Vercel en professionele documentatie."
+  },
+  "articles": [
+    {
+      "id": 1,
+      "slug": "context-publiceren",
+      "title": "Context: De weg naar het internet",
+      "category": "Theorie",
+      "content": "Het publiceren van een website is tegenwoordig meer dan een bestand uploaden. Het draait om de 'Gouden Driehoek':\n\n1. **Domeinnaam (DNS):** Het adres dat verwijst naar een IP.\n2. **Hosting (Serverless):** Vercel schaalt automatisch en is razendsnel.\n3. **SSL-Beveiliging:** Essentieel voor HTTPS en veiligheid."
+    },
+    {
+      "id": 2,
+      "slug": "ontwikkeling-proces",
+      "title": "Ontwikkeling: Van Klant naar Code",
+      "category": "Proces",
+      "content": "Het proces volgt de SDLC (Software Development Life Cycle):\n* **Analyse:** Wat is het doel?\n* **Design:** UI/UX ontwerpen in tools zoals Figma.\n* **Realisatie:** Bouwen met PHP en Bootstrap.\n* **Deployment:** Live zetten via een automatische CI/CD-pijplijn."
+    },
+    {
+      "id": 3,
+      "slug": "mogelijkheden-keuzes",
+      "title": "CMS, Builders of Eigen Code?",
+      "category": "Techniek",
+      "content": "1. **CMS:** Zoals WordPress. Makkelijk, maar zwaar.\n2. **Builders:** Zoals Wix. Snel, maar technisch beperkt.\n3. **Custom Code (PHP):** Zoals deze site. Maximale controle en snelheid."
+    },
+    {
+      "id": 4,
+      "slug": "troubleshooting-log",
+      "title": "Troubleshooting: Debugging Logboek",
+      "category": "Praktijk",
+      "content": "Tijdens de bouw overwonnen:\n* **Configuratie-fout:** vercel.json bevatte data in plaats van instellingen.\n* **Runtime Error:** De PHP-builder versie was offline. Opgelost door versie 0.7.2 te forceren.\n* **Node.js EOL:** Vercel weigerde oude Node-versies. Opgelost door de omgeving te moderniseren."
+    }
+  ]
+}
