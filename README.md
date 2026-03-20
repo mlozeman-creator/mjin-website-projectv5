@@ -1,47 +1,25 @@
-# 🚀 WEB.EDU: Modern Webonderwijs & Vibe Coding
-**Project MBO Niveau 4 - Software Development**
+# 🚀 WEB.EDU ELITE v2.0 - Meesterproef Software Development
+**Opleiding:** MBO Niveau 4 | **Focus:** Serverless PHP & Vibe Coding
 
-Dit project is een dynamisch educatief platform dat laat zien hoe moderne webontwikkeling werkt. De focus ligt op de synergie tussen **PHP**, **Cloud-hosting (Vercel)** en de opkomende trend van **Vibe Coding**.
+Dit project is een hoogwaardig educatief platform dat de grenzen opzoekt van wat mogelijk is met een "Flat-file" architectuur. De site fungeert niet alleen als informatiebron, maar ook als technisch bewijsstuk voor modern softwarebeheer.
 
-## 🔗 Live Website
-Bekijk het resultaat hier: **https://mijn-website-projectv5.vercel.app/**
+## 🌟 Elite Features (De "11" Waardig)
+* **Dynamisch Server-side Filter:** Een geavanceerd systeem dat via PHP (`array_filter`) de content sorteert op categorie zonder tussenkomst van een database.
+* **Data-Driven UI:** De categorie-knoppen en navigatie worden automatisch gegenereerd op basis van de inhoud in het JSON-bestand.
+* **Vibe Coding Methodiek:** Ontwikkeld met een AI-gestuurde workflow waarbij de focus ligt op architectuur en systeem-logica in plaats van handmatige syntax-kloppen.
+* **Real-time Leestijd:** Automatische berekening van de leestijd per artikel op basis van woordenaantal.
 
----
+## 🛠️ Technische Stack
+* **Backend:** PHP 8.x Engine (Serverless)
+* **Infrastructuur:** Vercel Cloud Runtime (`vercel-php@0.7.2`)
+* **Versiebeheer:** GitHub CI/CD Pijplijn
+* **Frontend:** Bootstrap 5.3 met Custom 'Jakarta Sans' Typography & Glassmorphism UI
 
-## 💡 Wat is Vibe Coding?
-In dit project is gebruikgemaakt van **Vibe Coding**. Dit houdt in dat ik als ontwikkelaar de regie voer over de architectuur, de "vibe" (gebruikerservaring) en de logica, terwijl ik AI-gestuurde tools inzet om razendsnel complexe syntax en server-configuraties op te lossen. 
-
-* **Toegepast op dit project:** Het oplossen van de Vercel PHP-runtime fouten en het bouwen van de dynamische routing is gedaan door nauwe samenwerking met AI, waardoor de focus bleef liggen op het eindproduct in plaats van op kleine typefouten.
-
-
-
----
-
-## 🛠️ De Technische Stack
-* **Taal:** PHP 8.x (Server-side rendering).
-* **Frontend:** Bootstrap 5 met een custom "Plus Jakarta Sans" interface.
-* **Database:** JSON flat-file database (`data/content.json`).
-* **Hosting:** Vercel (Serverless infrastructuur).
-* **Automatisering:** CI/CD koppeling tussen GitHub en Vercel.
-
----
-
-## 🔍 Logboek: Problemen & Oplossingen (Troubleshooting)
-Tijdens de ontwikkeling zijn de volgende obstakels overwonnen:
-
-1.  **Configuratie-fout:** Vercel weigerde de build omdat data en instellingen in de war waren. Opgelost door `vercel.json` strikt technisch te maken.
-2.  **Runtime Veroudering:** De standaard PHP-runtime werkte niet met de nieuwste Node.js versies. Opgelost door handmatig de runtime te updaten naar `vercel-php@0.7.2`.
-3.  **Taal & Vibe:** De hele interface is omgebouwd van Engels naar Nederlands om beter aan te sluiten bij de doelgroep van de opdracht.
-
-
-
----
-
-## 📂 Bestandsstructuur
+## 📂 Project Structuur
 ```text
 ├── api/
-│   └── index.php       # De 'motor' van de site (routering & logica)
+│   └── index.php       # De 'Logic Engine' & Routering
 ├── data/
-│   └── content.json    # De inhoud (artikelen, auteur, vibes)
-├── vercel.json         # Server-instellingen voor de cloud
-└── README.md           # Deze documentatie
+│   └── content.json    # Flat-file Database (Artikelen, Auteur & Metadata)
+├── vercel.json         # Infrastructure as Code (Cloud Config)
+└── README.md           # Technische Verantwoording
