@@ -1,14 +1,8 @@
-# 🚀 WEB.EDU ELITE v2.0 - Mark Lozeman
-**Opleiding:** MBO Niveau 4 Software Development | **Focus:** Serverless PHP & Vibe Coding
+# 🚀 WEB.EDU ELITE v2.1 - Mark Lozeman
 
-Dit project is een technisch hoogwaardig platform gebouwd door Mark Lozeman. Het maakt gebruik van een moderne CI/CD pijplijn en een "Flat-file" JSON-database voor optimale snelheid en beheerbaarheid.
+## 🛠️ Versiebeheer Workflow
+Dit project volgt de Semantic Versioning (SemVer) principes.
 
-## 🌟 Elite Features
-* **Dynamische Server-side Filters:** Content wordt live gefilterd via PHP-logica op de server.
-* **Vibe Coding Workflow:** Ontwikkeld met AI-ondersteuning waarbij architectuur belangrijker is dan syntax.
-* **Cloud Publicatie:** Volledig geautomatiseerd via GitHub naar Vercel Edge.
-
-## 🛠️ De Workflow
-De volgende commando's worden door Mark gebruikt om wijzigingen direct live te zetten:
-```bash
-git add . && git commit -m "Update Mark Lozeman" && git push origin main
+1. **Commit:** `git add . && git commit -m "Type: Omschrijving"`
+2. **Tagging:** `git tag -a v2.1 -m "Release v2.1"`
+3. **Push:** `git push origin main --tags`
