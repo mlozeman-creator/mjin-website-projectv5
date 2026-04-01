@@ -1,44 +1,42 @@
-# 🚀 WEB.EDU ELITE v3.2 - Mark Lozeman
-**Opleiding:** MBO Niveau 4 Software Development | **Vak:** Webprogrammeren
-**Status:** Final Release (v3.2) | **Focus:** Serverless PHP & Edge Computing
+# 🚀 WEB.EDU ELITE v3.5 - Mark Lozeman
+**Rol:** HBO Webdeveloper | **Doelgroep:** MBO-4 Software Development
+**Status:** Stable Production Release | **Stack:** Serverless PHP & Edge Computing
 
 ---
 
-## 🌟 Projectomschrijving
-WEB.EDU is een geavanceerd educatief platform dat fungeert als een 'Knowledge Base' voor moderne webtechnologieën. Het project is niet alleen een blog, maar een demonstratie van een volledige **Stateless Cloud Architectuur**. Het scheidt data (JSON) strikt van logica (PHP) en presentatie (Bootstrap 5).
+## 🌟 Project Visie
+WEB.EDU is een high-performance educatief platform, ontworpen vanuit een **HBO-architectuur perspectief**. Het doel is om MBO-4 studenten kennis te laten maken met professionele software-engineering concepten zoals *Statelessness*, *CI/CD pipelines* en *Data-driven rendering*.
 
-### Kernfunctionaliteiten:
-* **Dynamic Slug-based Routing:** Alle verzoeken worden afgehandeld via `api/index.php` met een regex-gebaseerde routering.
-* **Adminmode (RBAC):** Een 'Role-Based Access Control' systeem geactiveerd via de URL-parameter `?role=admin`.
-* **Live Metrics Console:** Een interactief dashboard dat real-time statistieken berekent uit de JSON-payload.
-* **Sanitized HTML Injection:** Veilige weergave van complexe educatieve content met 10 gespecialiseerde modules.
+### Kernfunctionaliteiten voor de MBO-4 Professional:
+* **Dynamic REST-style Routing:** Alle inkomende HTTP-verzoeken worden afgehandeld door een centrale controller (`api/index.php`), wat zorgt voor een schone URL-structuur en schaalbaarheid.
+* **HBO Admin Console (RBAC):** Een geavanceerd 'Role-Based Access Control' systeem. Door de parameter `?role=admin` te gebruiken, ontsluit de applicatie een real-time dashboard met data-analytics.
+* **Flat-file JSON Engine:** In plaats van een traditionele SQL-database gebruikt dit systeem een gestructureerd JSON-schema. Dit minimaliseert I/O-overhead en maximaliseert de snelheid op Edge-nodes.
+* **Sanitized HTML Injection:** De content wordt veilig gerenderd met ondersteuning voor rijke tekstopmaak, wat de leesbaarheid van de 10 diepgaande educatieve modules optimaliseert.
 
 ---
 
-## 🛠️ Technische Architectuur & Stack
-| Component | Technologie | Functie |
+## 🛠️ Technische Stack & Architectuur
+| Component | Technologie | HBO Implementatie Focus |
 | :--- | :--- | :--- |
-| **Backend** | PHP 8.3 (Serverless) | Business Logic & Data Processing |
-| **Frontend** | Bootstrap 5.3 + Google Fonts | Responsive UI & Visual Hierarchy |
-| **Data Layer** | JSON Flat-file | High-speed, NoSQL-style data storage |
-| **Infrastructure** | Vercel Edge Network | Global CDN, SSL Termination & CI/CD |
-| **Security** | TLS 1.3 & XSS Filtering | End-to-end encryptie en input validatie |
+| **Runtime** | PHP 8.3 (Serverless) | Stateless execution & Geheugen-efficiëntie |
+| **Frontend** | Bootstrap 5.3 + Custom CSS | Mobile-first Design & Visual Hierarchy |
+| **Data Layer** | JSON Schema v2.2 | NoSQL-style dataverwerking & Integriteit |
+| **Cloud** | Vercel Edge Network | Anycast DNS, SSL Termination & Global CDN |
+| **Workflow** | Git CI/CD | Automated Builds & Semantic Versioning |
 
 ---
 
-## 📦 Versiebeheer & CI/CD Workflow
-Dit project volgt een professionele **DevOps workflow**. Elke commit aan de `main` branch triggert een automatische build en deployment naar de Vercel Edge-nodes.
+## 📦 Versiebeheer & Deployment Workflow
+Als HBO Webdeveloper hanteren we een strikte **DevOps workflow**. Elke wijziging wordt gevalideerd en via Git naar de productie-omgeving gepusht.
 
-### Deployment Commando's:
+### Het Deployment Proces:
+1.  **Code & Content:** Wijzigingen doorvoeren in PHP of JSON.
+2.  **Versioning:** Gebruik van Git-tags om releases te markeren (v3.5).
+3.  **CI/CD:** Automatische build-triggering op het Vercel-platform.
+
 ```bash
-# 1. Stage wijzigingen
+# Professionele Push-routine
 git add .
-
-# 2. Commit met Semantic Versioning
-git commit -m "feat: upgrade admin console naar v3.2 elite"
-
-# 3. Release tagging
-git tag -a v3.2 -m "Elite Production Release"
-
-# 4. Cloud Deployment
+git commit -m "feat: hbo masterclass v3.5 - implementatie analytics dashboard"
+git tag -a v3.5 -m "HBO Production Release"
 git push origin main --tags
