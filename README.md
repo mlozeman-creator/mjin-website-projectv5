@@ -1,44 +1,44 @@
-# 🚀 WEB.EDU ELITE v2.1 - Mark Lozeman
+# 🚀 WEB.EDU ELITE v3.2 - Mark Lozeman
 **Opleiding:** MBO Niveau 4 Software Development | **Vak:** Webprogrammeren
-**Focus:** Serverless PHP, JSON Data-architectuur & CI/CD Versiebeheer
+**Status:** Final Release (v3.2) | **Focus:** Serverless PHP & Edge Computing
 
 ---
 
-## 🌟 Project Overzicht
-WEB.EDU is een educatief platform ontworpen voor MBO-studenten om complexe web-concepten te leren. Het project is gebouwd met een **"Performance First"** instelling, waarbij gebruik is gemaakt van een lichtgewicht PHP-engine zonder zware database-overhead.
+## 🌟 Projectomschrijving
+WEB.EDU is een geavanceerd educatief platform dat fungeert als een 'Knowledge Base' voor moderne webtechnologieën. Het project is niet alleen een blog, maar een demonstratie van een volledige **Stateless Cloud Architectuur**. Het scheidt data (JSON) strikt van logica (PHP) en presentatie (Bootstrap 5).
 
-### Kernfuncties:
-* **Dynamische Routing:** Alle verzoeken worden afgehandeld via `api/index.php` voor een Single Page Experience.
-* **Adminmode (Role-Based Access):** Een verborgen beheerschil die geactiveerd wordt via de URL-parameter `?role=admin`.
-* **Flat-file JSON Database:** Inhoud wordt beheerd via `data/content.json` voor maximale snelheid en eenvoudige back-ups.
-* **HTML-Content Injection:** Ondersteuning voor rijke tekstopmaak (lijsten, strong tags) direct vanuit de data-bron.
+### Kernfunctionaliteiten:
+* **Dynamic Slug-based Routing:** Alle verzoeken worden afgehandeld via `api/index.php` met een regex-gebaseerde routering.
+* **Adminmode (RBAC):** Een 'Role-Based Access Control' systeem geactiveerd via de URL-parameter `?role=admin`.
+* **Live Metrics Console:** Een interactief dashboard dat real-time statistieken berekent uit de JSON-payload.
+* **Sanitized HTML Injection:** Veilige weergave van complexe educatieve content met 10 gespecialiseerde modules.
 
 ---
 
-## 🛠️ Technische Stack
+## 🛠️ Technische Architectuur & Stack
 | Component | Technologie | Functie |
 | :--- | :--- | :--- |
-| **Backend** | PHP 8.3 (Serverless) | Business logic & Content rendering |
-| **Frontend** | Bootstrap 5.3 + Custom CSS | Responsive Design & UI |
-| **Database** | JSON (Flat-file) | Persistente opslag van artikelen en bio |
-| **Hosting** | Vercel Edge Network | Wereldwijde distributie & SSL |
-| **Versiebeheer** | Git & GitHub | Source control & CI/CD |
+| **Backend** | PHP 8.3 (Serverless) | Business Logic & Data Processing |
+| **Frontend** | Bootstrap 5.3 + Google Fonts | Responsive UI & Visual Hierarchy |
+| **Data Layer** | JSON Flat-file | High-speed, NoSQL-style data storage |
+| **Infrastructure** | Vercel Edge Network | Global CDN, SSL Termination & CI/CD |
+| **Security** | TLS 1.3 & XSS Filtering | End-to-end encryptie en input validatie |
 
 ---
 
-## 📦 Versiebeheer & Deployment
-Dit project maakt gebruik van een moderne **CI/CD pipeline** (Continuous Integration / Continuous Deployment). Elke wijziging wordt bijgehouden met Git-tags om mijlpalen te markeren.
+## 📦 Versiebeheer & CI/CD Workflow
+Dit project volgt een professionele **DevOps workflow**. Elke commit aan de `main` branch triggert een automatische build en deployment naar de Vercel Edge-nodes.
 
-### Workflow Commando's:
+### Deployment Commando's:
 ```bash
-# 1. Wijzigingen toevoegen
+# 1. Stage wijzigingen
 git add .
 
-# 2. Commit met duidelijke omschrijving
-git commit -m "feat: implementeer adminmode versiebeheer UI"
+# 2. Commit met Semantic Versioning
+git commit -m "feat: upgrade admin console naar v3.2 elite"
 
-# 3. Versie-tag aanmaken
-git tag -a v2.1 -m "Release versie 2.1"
+# 3. Release tagging
+git tag -a v3.2 -m "Elite Production Release"
 
-# 4. Push naar GitHub (triggert automatische Vercel build)
+# 4. Cloud Deployment
 git push origin main --tags
