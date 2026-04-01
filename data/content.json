@@ -1,7 +1,7 @@
 {
   "author": {
     "name": "Mark Lozeman",
-    "bio": "MBO-4 Software Developer in opleiding. Een gedreven 'Vibe Coder' met passie voor PHP, Bootstrap 5 en geautomatiseerde cloud-workflows via Vercel.",
+    "bio": "MBO-4 Software Developer in opleiding. Focus op cloud-native PHP applicaties en CI/CD workflows.",
     "avatar_name": "Mark+Lozeman", 
     "github_url": "https://github.com/mlozeman-creator/mijn-website-projectv5",
     "email": "mark.lozeman@windesheim.nl"
@@ -10,42 +10,42 @@
     {
       "id": 1,
       "slug": "context-publiceren",
-      "title": "De weg naar het internet",
+      "title": "De Reis van Code naar Cloud",
       "category": "Theorie",
-      "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=600",
-      "content": "Het publiceren van een website is meer dan een bestand uploaden. Het draait om de 'Gouden Driehoek': Domeinnaam (DNS), Hosting (Vercel) en SSL-beveiliging."
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
+      "content": "Het publiceren van een moderne webapplicatie gaat tegenwoordig veel verder dan het simpelweg uploaden van bestanden via FTP. In dit project maken we gebruik van de 'Gouden Driehoek' van modern webbeheer:\n\n1. **DNS & Domeinbeheer**: De wegwijzer van het internet. Zodra een gebruiker WEB.EDU intypt, vertaalt het Domain Name System dit naar het juiste IP-adres van onze cloud-provider.\n\n2. **Serverless Hosting (Vercel)**: In plaats van een traditionele VPS die 24/7 aanstaat, gebruiken we 'Serverless Functions'. Onze PHP-code wordt alleen uitgevoerd wanneer er een verzoek binnenkomt. Dit is schaalbaar en kostenefficiënt.\n\n3. **SSL/TLS Beveiliging**: Veiligheid is de standaard. Via Vercel wordt automatisch een SSL-certificaat gegenereerd, wat zorgt voor een versleutelde HTTPS-verbinding tussen de bezoeker en onze server."
     },
     {
       "id": 2,
       "slug": "ontwikkeling-proces",
-      "title": "Van Aanvraag naar Code",
+      "title": "De SDLC: Van Concept naar Code",
       "category": "Proces",
-      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600",
-      "content": "Ontwikkeling volgt de SDLC: van analyse en UI/UX ontwerp naar realisatie in PHP en uiteindelijke deployment."
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
+      "content": "Softwareontwikkeling is een gestructureerd proces, ook wel de Software Development Life Cycle (SDLC) genoemd. Bij WEB.EDU hebben we de volgende fasen doorlopen:\n\n**Fase 1: Analyse & Eisen**\nWat is het doel? Een educatief platform voor MBO studenten. Eisen: Snelheid, mobielvriendelijk (Bootstrap) en een scheiding tussen beheer en presentatie.\n\n**Fase 2: Architectuur Keuze**\nEr is gekozen voor een 'Flat-file' systeem. Dit betekent dat we geen logge SQL-database gebruiken, maar een lichtgewicht JSON-bestand. Dit maakt de applicatie razendsnel en makkelijk te back-uppen via Git.\n\n**Fase 3: Realisatie**\nDe logica is geschreven in PHP 8.3. We gebruiken de 'Router' methodiek waarbij één bestand (index.php) bepaalt welke content getoond wordt op basis van URL-parameters (?page=...)."
     },
     {
       "id": 3,
       "slug": "mogelijkheden-keuzes",
-      "title": "CMS of Eigen Code?",
+      "title": "De Grote Keuze: Custom Code vs CMS",
       "category": "Techniek",
-      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600",
-      "content": "Kies je voor de vrijheid van eigen code (PHP), de snelheid van een builder (Wix) of het gemak van een CMS (WordPress)?"
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800",
+      "content": "Een veelgestelde vraag in de IT-wereld: Bouw je alles zelf, of gebruik je een bestaand systeem? \n\n**Custom PHP (Onze keuze)**\n- **Voordelen**: Volledige controle over de code, geen onnodige 'bloatware' en een unieke look.\n- **Nadelen**: Het kost meer tijd om functies zoals filtering en admin-rollen vanaf nul te bouwen.\n\n**CMS (WordPress / Wix)**\n- **Voordelen**: Heel snel klaar, duizenden plug-ins beschikbaar.\n- **Nadelen**: Minder flexibel voor specifieke wensen (zoals onze Adminmode) en vaak trager door de vele scripts die op de achtergrond draaien.\n\nDoor zelf te programmeren in PHP, leren we de diepere werking van HTTP-requests en data-parsing, wat essentieel is voor een Software Developer op niveau 4."
     },
     {
       "id": 4,
       "slug": "troubleshooting-log",
-      "title": "Logboek: Problemen Oplossen",
+      "title": "Logboek: Bloed, Zweet en JSON",
       "category": "Praktijk",
-      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600",
-      "content": "Tijdens dit project zijn runtime-errors en Node.js versie-conflicten opgelost door de vercel.json configuratie te optimaliseren."
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
+      "content": "Ontwikkelen gaat nooit zonder slag of stoot. Hier zijn de drie grootste technische uitdagingen waar we tijdens dit project tegenaan liepen en hoe we ze hebben opgelost:\n\n**Probleem 1: De 'Undefined Variable' Errors op Vercel**\n*Situatie*: Lokaal werkte alles, maar live gaf de site PHP-errors.\n*Oplossing*: De PHP-runtime op Vercel is strikter. We moesten variabelen zoals $isAdmin en $page expliciet initialiseren bovenin het script met de Null Coalescing Operator (??).\n\n**Probleem 2: Gebroken links bij routing**\n*Situatie*: Na het klikken op een artikel bleef de pagina wit.\n*Oplossing*: De volgorde van de if/else structuur was onjuist. Door de check op 'articleSlug' prioriteit te geven boven de 'page' check, werd de juiste content weer geladen.\n\n**Probleem 3: Beveiliging van de Adminmode**\n*Situatie*: Hoe zorgen we dat niet iedereen bij de beheertools kan?\n*Oplossing*: We hebben een rolgebonden autorisatie-check ingebouwd. Alleen als de specifieke GET-parameter aanwezig is, ontsluit de PHP-code de extra 'Adminmode' functies."
     },
     {
       "id": 5,
       "slug": "vibe-coding",
-      "title": "Vibe Coding: De Revolutie",
+      "title": "Vibe Coding: De Toekomst van Development",
       "category": "Trend",
-      "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600",
-      "content": "Vibe Coding laat AI de syntax doen terwijl de developer de architectuur bewaakt. Dit project is daar het bewijs van."
+      "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800",
+      "content": "Vibe Coding is een nieuwe term in de industrie. Het houdt in dat de developer zich focust op de 'vibe' (de architectuur, de gebruikerservaring en de logica), terwijl AI-tools helpen bij het genereren van de repetitieve syntax.\n\nIn dit project hebben we dit toegepast door:\n- De datastructuur (JSON) zelf te ontwerpen.\n- De beveiligingslogica (Adminmode) zelf uit te denken.\n- AI te gebruiken om Bootstrap-componenten snel op te zetten en complexe PHP-fouten te debuggen.\n\nDit verhoogt de productiviteit enorm, maar vereist nog steeds een diep begrip van de basis. Zonder PHP-kennis kun je de AI namelijk niet de juiste opdrachten geven of fouten herkennen."
     }
   ]
 }
